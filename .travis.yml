@@ -1,0 +1,10 @@
+matrix:
+  include:
+    if: branch = master AND type = push
+      os: linux
+      dist: xenial
+      python: "3.7"
+      sudo: true
+      script: deploy_documentation.sh
+      git:
+        depth: false
