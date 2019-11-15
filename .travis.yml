@@ -6,13 +6,11 @@ matrix:
       dist: xenial
       python: "3.7"
       sudo: true
-      script: deploy_documentation.sh
+      script: ./deploy_documentation.sh
       git:
         depth: false
 
 before_install:
-
-
   - >-
     openssl aes-256-cbc
     -K $encrypted_43156c1f40d1_key
