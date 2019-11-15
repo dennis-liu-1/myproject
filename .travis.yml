@@ -18,6 +18,6 @@ before_install:
     -in github_deploy_key.enc
     -out github_deploy_key
     -d
-  - chmod 600 github_deploy_key
+  - chmod 777 github_deploy_key
   - eval $(ssh-agent -s)
   - ssh-add github_deploy_key
