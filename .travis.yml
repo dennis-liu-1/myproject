@@ -10,10 +10,12 @@ matrix:
         depth: false
 
 before_install:
+
+
   - >-
     openssl aes-256-cbc
-    -K $encrypted_xxxxxxxxxxxx_key
-    -iv $encrypted_xxxxxxxxxxxx_iv
+    -K $encrypted_43156c1f40d1_key
+    -iv $encrypted_43156c1f40d1_iv
     -in github_deploy_key.enc
     -out github_deploy_key
     -d
