@@ -1,11 +1,11 @@
 # Non-travis variables used by this script.
-TARGET_REPOSITORY="git@github.com:dennis-liu-1/myprojectfiles.git"
+TARGET_REPOSITORY="git@github.com:dennis-liu-1/myproject.git"
 TARGET_DOC_DIR="."
 SOURCE_DOC_DIR="_build/html"
 SOURCE_DIR=`pwd`
 SOURCE_LANG='en'
 
-SOURCE_REPOSITORY="git@github.com:dennis-liu-1/myprojectfiles.git"
+SOURCE_REPOSITORY="git@github.com:dennis-liu-1/myproject.git"
 
 # Build the documentation.
 echo "make html"
