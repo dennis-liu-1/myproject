@@ -15,6 +15,12 @@ echo "end of make html"
 git config user.name "Qiskit Autodeploy"
 git config user.email "qiskit@qiskit.org"
 
+set -e
+openssl aes-256-cbc -K $encrypted_43156c1f40d1_key -iv $encrypted_43156c1f40d1_iv -in github_deploy_key.enc -out github_deploy_key -d
+chmod 600 github_deploy_key
+eval $(ssh-agent -s)
+ssh-add github_deploy_key
+
 rm -rf ./_build/doctrees
 rm -rf ./_build/html/_sources
 mkdir html
