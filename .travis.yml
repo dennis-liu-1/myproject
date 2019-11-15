@@ -1,6 +1,7 @@
 matrix:
+  fast_finish: true
   include:
-    if: branch = master AND type = push
+    - if: branch = master AND type = push
       os: linux
       dist: xenial
       python: "3.7"
