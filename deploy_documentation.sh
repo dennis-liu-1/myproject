@@ -6,7 +6,7 @@ SOURCE_DIR=`pwd`
 SOURCE_LANG='en'
 
 SOURCE_REPOSITORY="git@github.com:dennis-liu-1/myproject.git"
-
+pwd
 # Build the documentation.
 echo "make html"
 make html
