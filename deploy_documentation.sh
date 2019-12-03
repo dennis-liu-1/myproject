@@ -25,10 +25,9 @@ rm -rf ./_build/doctrees
 rm -rf ./_build/html/_sources
 git clone --depth 1 $SOURCE_REPOSITORY temp --single-branch --branch master
 
-mkdir html
-cp -r _build/html/ temp/html/
+cp -r _build/html/ temp/docs/
 cd temp
-git add html/
+git add docs/
 git commit -m "Added html pages" -m "Commit: $TRAVIS_COMMIT" -m "Travis build: https://travis-ci.com/$TRAVIS_REPO_SLUG/builds/$TRAVIS_BUILD_ID"
 echo "git push"
 git push --quiet
