@@ -28,4 +28,4 @@ cp -r _build/html/ html/
 git add html
 git commit -m "Added html pages" -m "Commit: $TRAVIS_COMMIT" -m "Travis build: https://travis-ci.com/$TRAVIS_REPO_SLUG/builds/$TRAVIS_BUILD_ID"
 echo "git push"
-git push --quiet
+git push origin master
