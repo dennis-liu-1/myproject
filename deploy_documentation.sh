@@ -28,6 +28,6 @@ git clone --depth 1 $SOURCE_REPOSITORY temp --single-branch --branch master
 cp -r _build/html/ temp/docs/
 cd temp
 git add docs/
-git commit -m "Added html pages" -m "Commit: $TRAVIS_COMMIT" -m "Travis build: https://travis-ci.com/$TRAVIS_REPO_SLUG/builds/$TRAVIS_BUILD_ID" -m [skip travis]
+git commit -m "Added html pages" -m "Commit: $TRAVIS_COMMIT" -m "Travis build: https://travis-ci.com/$TRAVIS_REPO_SLUG/builds/$TRAVIS_BUILD_ID" -m ["skip travis"]
 echo "git push"
 git push --quiet
