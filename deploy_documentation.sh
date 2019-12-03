@@ -24,7 +24,7 @@ ssh-add github_deploy_key
 rm -rf ./_build/doctrees
 rm -rf ./_build/html/_sources
 mkdir html
-cp _build/html/ html/
+cp -r _build/html/ html/
 git add html
 git commit -m "Added html pages" -m "Commit: $TRAVIS_COMMIT" -m "Travis build: https://travis-ci.com/$TRAVIS_REPO_SLUG/builds/$TRAVIS_BUILD_ID"
 echo "git push"
