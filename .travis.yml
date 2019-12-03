@@ -9,3 +9,4 @@ matrix:
       script: ./deploy_documentation.sh
       git:
         depth: false
+language: python
