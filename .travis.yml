@@ -1,3 +1,5 @@
+before_script:
+  - chmod +x deploy_documentation.sh
 matrix:
   fast_finish: true
   include:
@@ -6,7 +8,7 @@ matrix:
       dist: xenial
       python: "3.7"
       sudo: true
-      script: "./deploy_documentation.sh"
+      script: ./deploy_documentation.sh
       git:
         depth: false
 language: python
